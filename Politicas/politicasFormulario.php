@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>POLITICAS</title>
+    <link rel="stylesheet" href="politicasFormulario.css">
   </head>
   <body>
     <h2>Elaboracion de Politicas</h2>
