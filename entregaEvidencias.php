@@ -1,12 +1,4 @@
-<?php
-//Conexion a BD
-$conexion = mysql_connect('localhost', 'root', '')  or die('No se pudo conectar: ' . mysql_error());
-//SELECCIONANDO DB
-mysql_select_db('taller_scrum') or die('No se pudo seleccionar la base de datos');
-//PETICION DB
-// $query="SELECT * FROM materias WHERE idAlumno=$idAlumno";
-// $result = mysql_query($query);
- ?>
+
 
 
 <!DOCTYPE html>
@@ -14,6 +6,7 @@ mysql_select_db('taller_scrum') or die('No se pudo seleccionar la base de datos'
   <head>
     <meta charset="utf-8">
     <title>EVIDENCIAS</title>
+    <link rel="stylesheet" href="entregaEvidencias.css">
     <script type="text/javascript">
       function mostrarArchivo() {
         var documento=document.getElementById('archivo').value;

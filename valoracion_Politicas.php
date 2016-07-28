@@ -12,11 +12,16 @@
 
 </div>
 <div class="materia">
-	<form action="materia.php" method="POST">
+	
 		<p>
 			SELECCIONA TU MATERIA
+
+			 <form action='' method='post'>
+                <input type="radio" name="pagina" value="" checked="">Ninguno de la lista</input><br>
+              
+            </form>
 		</p>
-	</form>
+	
 
 
 </div>
@@ -26,8 +31,7 @@
 	<input id="guardar" type="submit" value="GUARDAR">
 	
 </div>
-
-
+ 
 
 	
 	

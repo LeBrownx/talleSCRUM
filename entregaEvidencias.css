@@ -1,0 +1,32 @@
+table {     
+  margin-left:30%; 
+  font-family: 'Comic Sans MS', 'Comic Sans MS', Sans-Serif;
+  font-size: 24px;    
+  width: 300px; 
+  text-align: left;    
+  border-collapse: collapse; 
+}
+
+th {     
+  font-size: 13px;     
+  font-weight: normal;    
+  padding: 8px;       
+  border-top: 4px solid #aabcfe;    
+  border-bottom: 1px solid #fff; 
+  color: #039; }
+
+td {    
+  padding: 8px;      
+  border-bottom: 1px solid #fff;
+  color: white;    
+  border-top: 1px solid transparent;
+  text-shadow: 2px 2px 5px black;
+   }
+
+  body{
+   background-image: url("fondo2.jpg");
+  color:white;
+  text-align:center;
+  font-family:Open Sans;
+  font-size:10pt;
+}
