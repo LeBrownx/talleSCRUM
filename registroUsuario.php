@@ -5,7 +5,7 @@ if(!empty($_POST['nombre'])){
         $pass = $_POST['pass'];
         $email = $_POST['email'];
         $tipoUsuario = $_POST['TipoUsuario'];
-    
+
         mysql_connect('localhost','root','root')
         or die("Error al conectar " . mysql_error());
         mysql_select_db('taller_scrum') //aca era proyecto
@@ -14,7 +14,7 @@ if(!empty($_POST['nombre'])){
             mysql_query();
             $informacion = mysql_query("INSERT INTO ptc");
         }else{
-            
+
         }
     }
 ?>
@@ -22,6 +22,19 @@ if(!empty($_POST['nombre'])){
 <HTML>
     <HEAD>
         <meta charset="utf-8">
+        <script type="text/javascript">
+        function habilitar(value)
+        {
+          if(value=="PTC" || value==true)
+          {
+            // habilitamos
+            document.getElementById("cuatri").disabled=false;
+          }else if(value=="Alumno" || value==false){
+            // deshabilitamos
+            document.getElementById("cuatri").disabled=true;
+          }
+        }
+        </script>
     </HEAD>
     <BODY>
         <form action="registroUsuario.php" method="post">
@@ -29,11 +42,11 @@ if(!empty($_POST['nombre'])){
             <input type= "text" placeholder="Apellidos" name="apellidos">
             <input type= "password" placeholder="Contraseña" name="pass">
             <input type= "email" placeholder="Correo" name="email">
-            <select name="TipoUsuario">
+            <select name="TipoUsuario" id="usuarioT" onchange="habilitar()">
                 <option value="PTC">PTC</option>
                 <option value="Alumno">Alumno</option>
             </select>
-            <select name="cuatrimestre">
+            <select name="cuatrimestre" id="cuatri">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
