@@ -1,0 +1,39 @@
+.materia{
+	background: pink;
+	width: 300px;
+	height: 600px;
+	position: absolute;
+	margin-top: 10px;
+
+}
+
+
+.politica{
+	position: absolute;
+	background: white;
+	margin-left: 307px;
+	margin-top: 10px;
+	width: 1000px;
+	height: 450px;
+	overflow: scroll;
+
+
+}
+
+#radioo{
+	position: absolute;
+margin-left: 310px;
+margin-top: 490px;
+}
+#radioo2{
+	position: absolute;
+margin-left: 310px;
+margin-top: 510px;
+}
+
+
+#guardar{
+	position: absolute;
+margin-left: 1200px;
+margin-top: 540px;
+}

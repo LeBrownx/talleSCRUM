@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="valoracion_Politicas.css">
+</head>
+<body>
+<div>
+	<div class="politica">
+	
+
+</div>
+<div class="materia">
+	<form action="materia.php" method="POST">
+		<p>
+			SELECCIONA TU MATERIA
+		</p>
+	</form>
+
+
+</div>
+	<p id="radioo"><input type='radio' name='respuesta' id ='radio' value='Acepta'>Aceptar politicas de la materia</p>
+	<p id="radioo2"><input type='radio' name='respuesta' id ='radio2' value='Rechazo'>Rechazar politicas de la materia</p>
+
+	<input id="guardar" type="submit" value="GUARDAR">
+	
+</div>
+
+
+
+	
+	
+</body>
+</html>
