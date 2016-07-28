@@ -2,7 +2,6 @@
 $usuario = $_POST['usuario'];
 $pass = $_POST['contra'];
 $opcion = $_POST['opcion'];
-session_destroy();
 session_start();
 $_SESSION['user'] ="";
 
@@ -26,7 +25,7 @@ if ($opcion == 'Profesor') {
 		if($r = mysql_fetch_array($res)){
 			if($r['contrasena'] == $pass){
 				session_start();
-				$_SESSION['user'] = $usuario;
+				$_SESSION['user'] = $r['nombre']." ".$r['apellidos'];
 				header("Location: ptc.php");
 			}else{
 				header("Location: login.html");
@@ -41,14 +40,16 @@ if ($opcion == 'Profesor') {
 }
 
 if ($opcion == 'Alumno') {
+	echo "entra aqui";
 	$result = mysql_query("SELECT * from alumno where matricula='" . $usuario . "'");
 	if($row = mysql_fetch_array($result)){
 		$id = $row['idUsuario'];
 		$res = mysql_query("SELECT * from usuario where idUsuario='" . $id . "'");
 		if($r = mysql_fetch_array($res)){
+		echo "vuelve  ".$id;
 			if($r['contrasena'] == $pass){
 				session_start();
-				$_SESSION['user'] = $usuario;
+				$_SESSION['user'] = $r['nombre']." ".$r['apellidos'];
 				header("Location: alumno.php");
 			}else{
 				header("Location: login.html");

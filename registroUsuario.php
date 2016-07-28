@@ -52,6 +52,18 @@ if(!empty($_POST['nombre'])){
         <link rel="stylesheet" href="registroUsuario.css">
     </HEAD>
     <BODY>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Sistema</a>
+            </div>
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+            </ul>
+          </div>
+        </nav>
         <form action="registroUsuario.php" method="post">
             <input type= "text" placeholder="Nombre" name="nombre">
             <input type= "text" placeholder="Apellidos" name="apellidos">

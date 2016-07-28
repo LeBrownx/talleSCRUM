@@ -4,19 +4,38 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="color2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-<body>
-	<form method="POST" action="login.php">
-		<br>
-		<input type="text" name ="usuario" placeholder="Matricula" autocomplete="off" required>
-		<br> <br>
-		<input type="password" name ="contra" placeholder="Contraseña" autocomplete="off" required>
-		<br> <br>
-		<select name = "opcion">
-			<option value = "Profesor">Profesor</option>
-			<option value = "Alumno">Alumno</option>
-		</select> <br>
-		<button type="submit" name="button">Entrar</button>
-	</form>
+<body>	
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sistema</a>
+    </div>
+    <ul class="nav navbar-nav">
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="registroUsuario.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+	<div>
+		<form method="POST" action="login.php">
+			<br>
+			<input type="text" name ="usuario" placeholder="Matricula o Clave" autocomplete="off" required>
+			<br>
+			<input type="password" name ="contra" placeholder="Contraseña" autocomplete="off" required>
+			<br>
+			<select name = "opcion">
+				<option value = "Profesor">Profesor</option>
+				<option value = "Alumno">Alumno</option>
+			</select>
+			<button type="submit" name="button">Entrar</button>
+		</form>
+	</div>
+	
 </body>
 </html>
