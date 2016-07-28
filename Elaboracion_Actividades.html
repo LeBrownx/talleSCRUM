@@ -3,46 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="color.css">
 </head>
 <body>
-	<h1>CRITERIOS DE ACTIVIDAD</h1>
-	Titulo:<input type="text">	</b><br>
-	Descripcion
-	<textarea name="" id="" cols="30" rows="7"></textarea> <br>
+	<form method="POST" action="Elaboracion_Actividades.php">
+		<h1>CRITERIOS DE ACTIVIDAD</h1>
+		Titulo:<input type="text" name="titulo">	</b><br>
+		Descripcion
+		<textarea name="descripcion" id="" cols="30" rows="7"></textarea> <br>
 
-	Lista de Cotejo :
-	<select name="lista_cotejo" id="list_cot">
-		<option value="">listas</option>
-	</select><br>
+		Lista de Cotejo :
+		<select name="lista_cotejo" id="list_cot"id="list_cot">
+			<option value="Primer lista">listas</option>
+		</select><br>
 
-	Puntuacion:
-	<select name="puntuacion" id="punt">
-		<option value=""></option>
+		Puntuacion:
+		<select name="puntuacion" id="punt">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="1">40</option>
+			<option value="2">50</option>
+			<option value="3">60</option>
+			<option value="1">70</option>
+			<option value="2">80</option>
+			<option value="3">90</option>
+			<option value="3">100</option>
+		</select>
+		Corte:
+		<select name="corte" id="cort">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select><br>
 
-	</select>
-	Corte:
-	<select name="corte" id="cort">
-		<option value=""></option>
 
-	</select><br>
+		<select name="asignatura" id="" >
+			<option value="Asignatura">Asignatura</option>
+		</select><br>
+		<select name="cuatri" id="" >
+			<option value="cuatrimestre">Cuatrimestre</option>
+		</select><br>
+		<select name="grupo" id="" >
+			<option value="Grupo">Grupo</option>
+		</select><br>
+	    <label>Fecha de entrega</label><br>
+	    <input type="date" name="fecha" placeholder="Fecha " required=""><br>
 
-
-	<select name="" id="" >
-		<option value="Asignatura">Asignatura</option>
-	</select><br>
-	<select name="" id="" >
-		<option value="cuatrimestre">Cuatrimestre</option>
-	</select><br>
-	<select name="" id="" >
-		<option value="Grupo">Grupo</option>
-	</select><br>
-	<label id = "label">Subir listas</label>
-    <input type="file" name="archivo" accept=".pdf"><b><br>
-    <label>Fecha de entrega</label><br>
-    <input type="date" name="fecha" placeholder="Fecha " required=""><br>
-
-	<input type="submit" value="GUARDAR">
-	<input type="submit" value="EDITAR">
+		<input type="submit" value="GUARDAR">
+	</form>
 	<input type="submit" value="PUBLICAR">
 	
 </body>
