@@ -49,6 +49,7 @@ if(!empty($_POST['nombre'])){
           }
         }
         </script>
+        <link rel="stylesheet" href="registroUsuario.css">
     </HEAD>
     <BODY>
         <form action="registroUsuario.php" method="post">
