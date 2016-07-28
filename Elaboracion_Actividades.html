@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="color.css">
 </head>
 <body>
+<<<<<<< HEAD
 	<h1>CRITERIOS DE ACTIVIDAD</h1>
 	<p>Titulo: <input type="text"></p> 	
 	
@@ -44,6 +45,54 @@
 
 	<input type="submit" value="GUARDAR">
 	<input type="submit" value="EDITAR">
+=======
+	<form method="POST" action="Elaboracion_Actividades.php">
+		<h1>CRITERIOS DE ACTIVIDAD</h1>
+		Titulo:<input type="text" name="titulo">	</b><br>
+		Descripcion
+		<textarea name="descripcion" id="" cols="30" rows="7"></textarea> <br>
+
+		Lista de Cotejo :
+		<select name="lista_cotejo" id="list_cot"id="list_cot">
+			<option value="Primer lista">listas</option>
+		</select><br>
+
+		Puntuacion:
+		<select name="puntuacion" id="punt">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="1">40</option>
+			<option value="2">50</option>
+			<option value="3">60</option>
+			<option value="1">70</option>
+			<option value="2">80</option>
+			<option value="3">90</option>
+			<option value="3">100</option>
+		</select>
+		Corte:
+		<select name="corte" id="cort">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select><br>
+
+
+		<select name="asignatura" id="" >
+			<option value="Asignatura">Asignatura</option>
+		</select><br>
+		<select name="cuatri" id="" >
+			<option value="cuatrimestre">Cuatrimestre</option>
+		</select><br>
+		<select name="grupo" id="" >
+			<option value="Grupo">Grupo</option>
+		</select><br>
+	    <label>Fecha de entrega</label><br>
+	    <input type="date" name="fecha" placeholder="Fecha " required=""><br>
+
+		<input type="submit" value="GUARDAR">
+	</form>
+>>>>>>> 03be0196f2cbfe0729c3e8853396e9c387a80487
 	<input type="submit" value="PUBLICAR">
 	
 </body>
