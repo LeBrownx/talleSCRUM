@@ -1,0 +1,22 @@
+
+
+body{
+	background-image: url("hola.jpg");
+	text-align: center;
+}
+h1{
+	color: black;
+
+}
+
+p{
+	font-family: Open Sans;
+	font-size: 20px;
+}
+
+
+button{
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 10px;
+}
