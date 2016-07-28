@@ -19,17 +19,15 @@ button{
 	padding: 10px;
 	margin: 10px;
 	margin-bottom: 10px;
-<<<<<<< HEAD
-=======
 }
 input{
 	font-family: Open Sans;
 	font-size: 12pt;
-	line-height: 2.6em;
-	margin: 0;
+	line-height: 2.0em;
+	margin: 10px;
 	padding: 0;
 	
-	border: none;
+	border-radius: 20%;
 }
 form{
 	margin-left: 30%;
@@ -47,10 +45,18 @@ form{
 textarea{
 	font-family: Open Sans;
 	font-size: 12pt;
-	line-height: 2.6em;
+	line-height: 2.5em;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	border: none;
->>>>>>> 03be0196f2cbfe0729c3e8853396e9c387a80487
+}
+
+select{
+	margin-left: 5%;
+	top: 40%;
+	font-family: Open Sans;
+	font-size: 12pt;
+	width: 30%;
+	border-radius: 20%;
 }
